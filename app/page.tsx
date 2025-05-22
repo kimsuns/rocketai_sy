@@ -1,11 +1,31 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import { MOCK_SAJU } from "./lib/types";
 import Saju from "./views/Saju";
 
 export default function Home() {
   const data = MOCK_SAJU[0];
+  const sajuRef = useRef<HTMLDivElement>(null);
+  const [parentHeight, setParentHeight] = useState<number>(0);
+
+  const baseHeight = 1000;
+
+  console.log("베이스", baseHeight);
+
+  useEffect(() => {
+    if (sajuRef.current) {
+      const totalHeight = baseHeight + sajuRef.current?.offsetHeight;
+      console.log("토탈", totalHeight);
+      setParentHeight(totalHeight);
+    }
+  });
 
   return (
-    <div className="flex flex-col items-center w-full max-w-md  bg-[#F5F3EC]">
+    <div
+      className="flex flex-col items-center w-full h-full max-w-md  bg-[#F5F3EC] min-h-screen"
+      style={{ minHeight: parentHeight }}
+    >
       <div className="relative w-full">
         <img src={"/assets/Group1.svg"} alt="title" className="w-full" />
         <div
@@ -33,7 +53,10 @@ export default function Home() {
           제가 {data.name}님의 사주를
           <br /> 보기 쉽게 표로 정리했어요
         </div>
-        <div className="absolute w-full top-[92%] p-3">
+        <div
+          ref={sajuRef}
+          className="absolute w-full top-[92%] p-3 bottom-[clamp(10px,5vw,30px)]"
+        >
           <Saju data={data} />
         </div>
       </div>
