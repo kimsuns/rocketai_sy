@@ -1,5 +1,3 @@
-import Saju from "../views/Saju";
-
 // 라벨별 언어 데이터
 export const COL_LABELS = {
   time: {
@@ -83,12 +81,6 @@ export const ROW_LABELS = {
 //     },
 //   },
 // ];
-
-// 서브메인컬러 사주
-const MOCK_MAIN_SAJU = {
-  cheongan: {},
-  jiji: {},
-};
 
 export interface SajuDetailType {
   hanja?: string;
