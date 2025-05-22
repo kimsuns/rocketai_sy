@@ -110,7 +110,7 @@ export const MOCK_SAJU: SajuAllType[] = [
   {
     id: "1",
     name: "김선영",
-    birth: new Date("1980-8-27"),
+    birth: new Date("1980-8-27T08:10:00"),
     born: "08:10",
     saju: [
       {
