@@ -1,41 +1,5 @@
 import SajuTable from "../components/SajuTable";
-import { COL_LABELS, ROW_LABELS, SajuAllType } from "../lib/types";
-
-// interface SajuData {
-//   time: string;
-//   day: string;
-//   month: string;
-//   year: string;
-// }
-
-// interface Saju {
-//   sipseong1: SajuData;
-//   cheongan: SajuData;
-//   jiji: SajuData;
-//   sipseong2: SajuData;
-//   sipiunseong: SajuData;
-//   sipisinsal: SajuData;
-//   gwiin: SajuData;
-// }
-
-// interface SajuProps {
-//   id: string;
-//   name: string;
-//   birth: Date;
-//   time: string;
-//   saju: Saju;
-// }
-
-const saju_col = ["time", "day", "month", "year"];
-const saju_row = [
-  "sipseong1",
-  "cheongan",
-  "jiji",
-  "sipseong2",
-  "sipiunseong",
-  "sipisinsal",
-  "gwiin",
-];
+import { SajuAllType } from "../lib/types";
 
 export default function Saju({ data }: { data: SajuAllType }) {
   const { name, birth, born } = data;
