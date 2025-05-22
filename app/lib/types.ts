@@ -18,15 +18,15 @@ export const COL_LABELS = {
   },
 };
 
-export const ROW_LABELS = {
-  sipseong1: { hanja: "十星1", kr: "십성" },
-  cheongan: { hanja: "天干", kr: "천간" },
-  jiji: { hanja: "地支", kr: "지지" },
-  sipseong2: { hanja: "十星2", kr: "십성" },
-  sipiunseong: { hanja: "十二運星", kr: "십이운성" },
-  sipisinsal: { hanja: "十二神煞", kr: "십이신살" },
-  gwiin: { hanja: "貴人", kr: "귀인" },
-};
+// export const ROW_LABELS = {
+//   sipseong1: { hanja: "十星1", kr: "십성" },
+//   cheongan: { hanja: "天干", kr: "천간" },
+//   jiji: { hanja: "地支", kr: "지지" },
+//   sipseong2: { hanja: "十星2", kr: "십성" },
+//   sipiunseong: { hanja: "十二運星", kr: "십이운성" },
+//   sipisinsal: { hanja: "十二神煞", kr: "십이신살" },
+//   gwiin: { hanja: "貴人", kr: "귀인" },
+// };
 
 // 더미 데이터
 // export const MOCK_SAJU_Gu = [
