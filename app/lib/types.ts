@@ -1,5 +1,3 @@
-import Saju from "../views/Saju";
-
 // 라벨별 언어 데이터
 export const COL_LABELS = {
   time: {
