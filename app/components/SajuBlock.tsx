@@ -3,10 +3,7 @@ import { SajuDetailType } from "../lib/types";
 export default function SajuBlock({ data }: { data: SajuDetailType | null }) {
   if (!data)
     return (
-      <div
-        className="text-cente"
-        style={{ fontSize: "clamp(4px, 4vw, 9.78px)" }}
-      >
+      <div className="text-cente" style={{ fontSize: "clamp(4px, 4vw, 12px)" }}>
         (없음)
       </div>
     );
