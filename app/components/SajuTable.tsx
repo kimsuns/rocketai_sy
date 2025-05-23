@@ -38,10 +38,10 @@ export default function SajuTable({ data }: { data: SajuAllType }) {
               <tr key={index} className="">
                 <th className={`border-r-2 ${bottomBorder} border-black`}>
                   <div className="flex flex-col">
-                    <div style={{ fontSize: "clamp(4px, 4vw, 12px)" }}>
+                    <div style={{ fontSize: "clamp(2px, 3vw, 12px)" }}>
                       {item.category.hanja}
                     </div>
-                    <div style={{ fontSize: "clamp(4px, 4vw, 7.82px)" }}>
+                    <div style={{ fontSize: "clamp(1px, 2vw, 7.82px)" }}>
                       ({item.category.ko})
                     </div>
                   </div>
