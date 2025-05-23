@@ -19,16 +19,12 @@ export default function SajuBlock({ data }: { data: SajuDetailType | null }) {
       {color ? (
         <div className="p-1 flex justify-center">
           <div
-            className={`flex flex-col items-center justify-center rounded-[12.5px] ${textColor} ${border}  p-1`}
-            style={{
-              backgroundColor: color,
-              width: "min(55.45xp,5vw)",
-              aspectRatio: "1 / 1",
-            }}
+            className={`flex flex-col items-center justify-center rounded-[12.5px] ${textColor} ${border} w-[55.45px] h-[55.45px]  p-1`}
+            style={{ backgroundColor: color }}
           >
             <div
               className="mb-[-5px]"
-              style={{ fontSize: "clamp(1px, 3vw, 7.6px)" }}
+              style={{ fontSize: "clamp(2px, 4vw, 7.6px)" }}
             >
               {topKo}
             </div>
@@ -37,7 +33,7 @@ export default function SajuBlock({ data }: { data: SajuDetailType | null }) {
             </div>
             <div
               className="mt-[-5px]"
-              style={{ fontSize: "clamp(1px, 3vw, 8.37px)" }}
+              style={{ fontSize: "clamp(2px, 4vw, 8.37px)" }}
             >
               {botHanja}
             </div>
