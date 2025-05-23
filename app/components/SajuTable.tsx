@@ -7,7 +7,7 @@ export default function SajuTable({ data }: { data: SajuAllType }) {
   console.log("받은데이터", data);
 
   return (
-    <div>
+    <div className="">
       <table className="table-fixed w-full h-full text-center">
         <thead>
           <tr style={{ fontSize: "clamp(4px, 4vw, 20.92px)" }}>
